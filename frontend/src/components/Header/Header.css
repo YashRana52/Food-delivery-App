@@ -1,0 +1,49 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background:url('./header.jpg') no-repeat ;
+    /* animation:  moveSideToSide 5s linear infinite;
+    */
+    position: relative;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+     animation: fadeIn 3s; 
+    
+}
+.header-contents h2{
+    font-weight: 500;
+    color: rgb(236, 233, 233);
+    font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color: rgb(247, 241, 241);
+    font-size: 1vw;
+
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@keyframes moveSideToSide {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
