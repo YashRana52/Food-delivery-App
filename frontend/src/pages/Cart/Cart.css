@@ -1,0 +1,134 @@
+.cart {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff; /* White background for the cart */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: #333; /* Darker text for better visibility */
+    font-size: max(1vw, 14px);
+    font-weight: 600; /* Bold font for titles */
+    border-bottom: 2px solid #e0e0e0; /* Subtle border for separation */
+    padding-bottom: 10px; /* Spacing below title */
+}
+
+.cart-items-item {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    padding: 15px; /* Added padding for spacing */
+    border-bottom: 1px solid #f0f0f0; /* Light border for item separation */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.cart-items-item:hover {
+    background-color: #f9f9f9; /* Light background on hover */
+}
+
+.cart-items-item img {
+    width: 60px; /* Increased image size for better visibility */
+    height: 60px; /* Fixed height */
+    object-fit: cover; /* Ensure images are well-fitted */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.cart-items-item p {
+    margin: 0; /* Remove default margins */
+    font-size: max(1vw, 12px); /* Responsive font size */
+    color: #555; /* Slightly lighter text color */
+}
+
+button {
+    background-color: #ff4d4d; /* Red background for the remove button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; 
+
+    cursor: pointer;
+    padding: 8px 12px; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+
+button:hover {
+    background-color: #e60000; 
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+}
+.cart-items-item .cross{
+    cursor: pointer;
+
+}
+.cart-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+}
+
+.cart-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+.cart-total hr{
+    margin: 10px 0px;
+}
+.cart-promocode{
+    flex: 1;
+}
+.cart-promocode p{
+    color: #555;
+
+}
+.promocode{
+    margin-top: 10px;
+}
+.cart-promocode-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+
+}
+.cart-promocode-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.cart-promocode-input button{
+    width: max(10vw,150px);
+    padding: 13px 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 4px;
+   
+   
+}
+@media (max-width:750px) {
+    .cart-bottom{
+        flex-direction: column-reverse;
+    }
+    .cart-promocode{
+        justify-content: start;
+    }
+    
+}
